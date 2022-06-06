@@ -1,0 +1,315 @@
+:root
+{
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+header
+{
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-bottom: 2px solid #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+ul
+{
+    list-style: none;
+    display: flex;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+ul a
+{
+    text-decoration: none;
+    color:var(--white);
+    padding: 22px 20px;
+    display: block;
+    transition: all 150ms ease-in-out;
+}
+
+ul a:hover
+{
+    background-color: var(--blue);
+}
+
+main
+{
+    width: 100%;
+}
+
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 3s steps(38) both,
+    blink 1s step-end 2 ;
+    max-width: fit-content;
+
+}
+
+.hero p
+{
+    font-family:Poppins;
+    font-size: 30px;
+    color: var(--red);
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 3s steps(35) 1600ms both,
+    blink 1s step-end 1600ms infinite ;
+    max-width: fit-content;
+    width:0px;
+}
+
+@keyframes type {
+    from { width: 0 }
+    to { width: 100%;
+        white-space:normal }
+}
+
+@keyframes blink {
+    0%,100%
+    {
+        border-right: 2px solid var(--red);
+    }
+    50%{
+        border-color: transparent;
+    }
+}
+
+/**********************************parcours_pro*********************************/
+
+#parcours_pro
+{
+    width: 100%;
+    background-color: var(--blue);
+    min-height: 100px;
+}
+
+.experiencegrand
+{
+    font-family: Raleway;
+    font-size: 40px;
+    color: var(--white);
+    padding: 10px 0;
+}
+.experience
+{
+    font-family: Raleway;
+    font-size: 25px;
+    color: var(--white);
+    padding: 10px 0;
+}
+
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border:1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#customers-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+}
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #3190E7;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {
+    text-align: center;
+    padding: 50px;
+    margin-bottom:80px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    border-radius: 90px;
+    margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #3190E7;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+    display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #3190E7;
+    display: inline-block;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+}
+/************************media query************************/
+
+#parcours_pro #show_more
+{
+    padding: 10px 22px;
+    font-family: Poppins;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-top: 60px;
+    background-color: var(--gray);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/*****************************contant**********************************/
+#contactez_moi
+{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+}
+
+#contactez_moi h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+}
+
+#contactez_moi p
+{
+    font-family:Poppins;
+    color: var(--white);
+    font-style: italic;
+    margin-top: 7px;
+    font-size: 19px;
+}
+
+#contactez_moi #links
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#contactez_moi #links a
+{
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    font-family: Poppins;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.2s linear;
+}
+
+#contactez_moi #links a:hover
+{
+    transform: translateY(10px);
+}
+
+#contactez_moi #links a i
+{
+    margin-right:5px ;
+}
+
+/***************************footer******************************/
+
+footer
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    color: var(--white);
+    border-top: 3px solid var(--red);
+}
+
+footer p
+{
+    font-size: 18px;
+    font-family: Poppins;
+    text-transform: capitalize;
+}
+
+footer p i
+{
+    color:var(--red);
+}
