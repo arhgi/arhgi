@@ -119,6 +119,34 @@ main
     }
 }
 
+/**********************************BTS_SIO*********************************/
+
+#bts_sio
+{
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    text-align: center;
+}
+
+#bts_sio h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+}
+
+#bts_sio p
+{
+    font-family:Poppins;
+    color: var(--white);
+    font-style: italic;
+    margin-top: 7px;
+    font-size: 19px;
+}
 /**********************************parcours_pro*********************************/
 
 #parcours_pro
@@ -230,7 +258,85 @@ main
     text-decoration: none;
 }
 
-/*****************************contant**********************************/
+/*****************************Competences**********************************/
+
+#competences
+{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    text-align: center;
+}
+
+#competences h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+}
+
+#competences #comps
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#competences #comps a
+{
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 1px 1px 2px black;
+    font-size: 125px;
+    font-family: Poppins;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.2s linear;
+}
+/*****************************Epreuve E4**********************************/
+
+#epreuve_e4
+{
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    text-align: center;
+}
+
+#epreuve_e4 h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+}
+
+#epreuve_e4 #link
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#epreuve_e4 #link a
+{
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    font-family: Poppins;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.2s linear;
+}
+/*****************************contact**********************************/
 #contactez_moi
 {
     background-color: var(--gray);
